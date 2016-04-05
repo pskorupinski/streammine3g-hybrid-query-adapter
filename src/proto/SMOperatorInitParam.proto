@@ -1,0 +1,33 @@
+message SearchRequest {
+
+	required string host = 1;
+	required int32 port = 2;
+	
+	optional string sourceName = 3;
+
+	enum DataSourceImplType {
+		REAL_TIME = 0;
+		MONGO_GRIDFS = 1;
+		HADOOPDFS = 2;
+	}
+	required DataSourceImplType dataSourceImplType = 4; // which concrete class should be used
+	
+	enum ReadPreferenceType {
+		READ_ALL = 0;
+		LIST_OF_KEYS = 1;
+	}	
+  	required ReadPreferenceType readPreferenceType = 5; // read everything (incl. real-time data)
+  	
+  	repeated GeneralKey generalKeys = 6;	// list of keys
+	
+	optional int32 partitionKey = 7;
+	
+	optional int32 timeLimitMin = 8;
+}
+
+message GeneralKey {
+	required string name = 1;
+	optional int64 first = 2;
+	optional int64 last = 3;
+	
+}

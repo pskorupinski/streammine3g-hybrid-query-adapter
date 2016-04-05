@@ -1,0 +1,12 @@
+option java_package = "streammine3G.example.msg";
+option java_outer_classname = "EventFormat";
+option optimize_for = SPEED;
+
+package Financial;
+
+message Event 
+{
+   required int64 timestamp = 1;
+   required int32 stockId   = 2;
+   required int32 tick      = 3;
+}

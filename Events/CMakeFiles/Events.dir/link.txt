@@ -1,0 +1,2 @@
+/usr/bin/ar cr libEvents.a  CMakeFiles/Events.dir/__/Event.pb.cpp.o
+/usr/bin/ranlib libEvents.a

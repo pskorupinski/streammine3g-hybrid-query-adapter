@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/local/mt1/workspace/example-third/Event.pb.cpp
+src/GPBPatch.hpp
+/local/mt1/workspace/example-third/src/GPBPatch.hpp
+Event.pb.h
+/local/mt1/workspace/example-third/Event.pb.h
+algorithm
+-
+google/protobuf/stubs/once.h
+-
+google/protobuf/io/coded_stream.h
+-
+google/protobuf/wire_format_lite_inl.h
+-
+google/protobuf/descriptor.h
+-
+google/protobuf/reflection_ops.h
+-
+google/protobuf/wire_format.h
+-
+
+/local/mt1/workspace/example-third/Event.pb.h
+string
+-
+google/protobuf/stubs/common.h
+-
+google/protobuf/generated_message_util.h
+-
+google/protobuf/repeated_field.h
+-
+google/protobuf/extension_set.h
+-
+google/protobuf/generated_message_reflection.h
+-
+
+/local/mt1/workspace/example-third/src/GPBPatch.hpp
+
